@@ -1,3 +1,9 @@
+/*
+	Original MusicPlyaer by Himalaya Singh
+	Music Player | Audia Player
+	https://codepen.io/himalayasingh/pen/QZKqOX
+*/
+
 $(function () {
 	var playerTrack = $("#player-track"),
 		bgArtwork = $("#bg-artwork"),
