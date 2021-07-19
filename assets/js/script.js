@@ -75,10 +75,12 @@ const checkGesture = () => {
 	pushGesture();
 
 	let gestureClass = "none";
-	if (gestureArray.length >= gestureQueueSize) {
+	if (gestureArray.length > gestureQueueSize) {
 		gestureClass = findMostFreqElement(gestureArray);
 		gestureInit();
 	}
+
+	console.log(gestureArray);
 
 	return gestureClass;
 };
@@ -107,7 +109,7 @@ const gestureInit = () => {
 };
 
 const pushGesture = () => {
-	if (gestureArray.length < gestureQueueSize) {
+	if (gestureArray.length <= gestureQueueSize) {
 		gestureArray.push(checkGestureRule(leapObj, modelPredict));
 	} else {
 		shiftGesture();
