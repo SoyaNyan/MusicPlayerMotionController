@@ -49,7 +49,7 @@ Leap.loop(function (obj) {
 
 $(document).ready(function () {
 	gestureInit();
-	//init();
+	init();
 
 	// timer
 	window.setInterval(() => {
@@ -80,6 +80,7 @@ const checkGesture = () => {
 		gestureInit();
 	}
 
+	console.log(modelPredict);
 	console.log(gestureArray);
 
 	return gestureClass;

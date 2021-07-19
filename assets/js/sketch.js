@@ -2,7 +2,7 @@
 // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
 // the link to your model provided by Teachable Machine export panel
-const URL = "/data/";
+const URL = "https://teachablemachine.withgoogle.com/models/-uOou347H/";
 
 let model, webcam, labelContainer, maxPredictions;
 
@@ -45,8 +45,7 @@ async function predict() {
 	// predict can take in an image, video or canvas html element
 	const prediction = await model.predict(webcam.canvas);
 	for (let i = 0; i < maxPredictions; i++) {
-		const classPrediction =
-			prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-		labelContainer.childNodes[i].innerHTML = classPrediction;
+		modelPredict.className = prediction[i].className;
+		modelPredict.probability = prediction[i].probability.toFixed(2);
 	}
 }
