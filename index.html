@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Music Player Controller</title>
+    <head>
+        <title>Music Player Controller</title>
 
-		<!-- Stylesheets -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
-		<link href="assets/css/style.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div id="app-cover">
-			<div id="bg-artwork"></div>
-			<div id="bg-layer"></div>
-			<div id="player">
-				<div id="player-track">
-					<div id="album-name"></div>
-					<div id="track-name"></div>
-					<div id="track-time">
-						<div id="current-time"></div>
-						<div id="track-length"></div>
-					</div>
-					<div id="s-area">
-						<div id="ins-time"></div>
-						<div id="s-hover"></div>
-						<div id="seek-bar"></div>
-					</div>
-				</div>
-				<div id="player-content">
-					<div id="album-art">
-						<img
-							src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
-							class="active"
-							id="_1"
-						/>
-						<img
-							src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_2.jpg"
-							id="_2"
-						/>
-						<img
-							src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_3.jpg"
-							id="_3"
-						/>
-						<img
-							src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_4.jpg"
-							id="_4"
-						/>
-						<img
-							src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg"
-							id="_5"
-						/>
-						<div id="buffer-box">Buffering ...</div>
-					</div>
-					<div id="player-controls">
-						<div class="control">
-							<div class="button" id="play-previous">
-								<i class="fas fa-backward"></i>
-							</div>
-						</div>
-						<div class="control">
-							<div class="button" id="play-pause-button">
-								<i class="fas fa-play"></i>
-							</div>
-						</div>
-						<div class="control">
-							<div class="button" id="play-next">
-								<i class="fas fa-forward"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        <!-- Stylesheets -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        />
+        <link href="assets/css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="app-cover">
+            <div id="bg-artwork"></div>
+            <div id="bg-layer"></div>
+            <div id="player">
+                <div id="player-track">
+                    <div id="album-name"></div>
+                    <div id="track-name"></div>
+                    <div id="track-time">
+                        <div id="current-time"></div>
+                        <div id="track-length"></div>
+                    </div>
+                    <div id="s-area">
+                        <div id="ins-time"></div>
+                        <div id="s-hover"></div>
+                        <div id="seek-bar"></div>
+                    </div>
+                </div>
+                <div id="player-content">
+                    <div id="album-art">
+                        <img
+                            src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+                            class="active"
+                            id="_1"
+                        />
+                        <img
+                            src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_2.jpg"
+                            id="_2"
+                        />
+                        <img
+                            src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_3.jpg"
+                            id="_3"
+                        />
+                        <img
+                            src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_4.jpg"
+                            id="_4"
+                        />
+                        <img
+                            src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg"
+                            id="_5"
+                        />
+                        <div id="buffer-box">Buffering ...</div>
+                    </div>
+                    <div id="player-controls">
+                        <div class="control">
+                            <div class="button" id="play-previous">
+                                <i class="fas fa-backward"></i>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <div class="button" id="play-pause-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <div class="button" id="play-next">
+                                <i class="fas fa-forward"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<!-- Javascripts -->
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-		<script src="assets/js/player.js"></script>
-		<script src="assets/js/script.js"></script>
-		<script src="assets/js/sketch.js"></script>
-	</body>
+        <!-- Javascripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+        <script src="https://js.leapmotion.com/leap-1.1.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script src="assets/js/player.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/sketch.js"></script>
+    </body>
 </html>
