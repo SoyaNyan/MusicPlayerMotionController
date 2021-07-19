@@ -226,6 +226,10 @@ $(function () {
 		sArea.on("click", playFromClickedPos);
 
 		$(audio).on("timeupdate", updateCurrTime);
+		
+		$(audio).on("ended", function () {
+			selectTrack(1);
+		});
 
 		playPreviousTrackButton.on("click", function () {
 			selectTrack(-1);
