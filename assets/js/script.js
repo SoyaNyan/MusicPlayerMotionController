@@ -31,8 +31,8 @@ const gestureSensitivity = 2;
 let gestureArray = [];
 
 let leapObj = {
-    hands: 0,
-    fingers: 0,
+    hands: 1,
+    fingers: 4,
 };
 
 let modelPredict = {
@@ -66,7 +66,7 @@ $(document).ready(function () {
                 break;
             default:
         }
-    }, 1000);
+    }, 500);
 });
 
 const checkGesture = () => {
