@@ -13,7 +13,7 @@ const gestureRule = {
     prev: {
         className: "prev",
         hands: 1,
-        fingers: 2,
+        fingers: 1,
     },
     next: {
         className: "next",
@@ -31,8 +31,8 @@ const gestureSensitivity = 2;
 let gestureArray = [];
 
 let leapObj = {
-    hands: 1,
-    fingers: 4,
+    hands: 0,
+    fingers: 0,
 };
 
 let modelPredict = {
@@ -78,6 +78,10 @@ const checkGesture = () => {
         gestureInit();
     }
 
+    console.log(modelPredict);
+    console.log(leapObj);
+    console.log(gestureArray);
+
     return gestureClass;
 };
 
@@ -93,6 +97,7 @@ const findMostFreqElement = (arr) => {
 };
 
 const checkGestureRule = (l, m) => {
+    console.log(m.className, gestureRule[m.className]);
     if (
         l.hands === gestureRule[m.className].hands &&
         l.fingers === gestureRule[m.className].fingers
