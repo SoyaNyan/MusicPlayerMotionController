@@ -1,1 +1,1 @@
-# MotionMusicPlayerController
+# MusicPlayerMotionController
